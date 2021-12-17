@@ -1,12 +1,12 @@
-var aux = '';
+var aux = "";
 document.onkeydown=function(letter){
     if (letter.key == 'Backspace'){
-        aux = '';
+        aux = "";
     }else {
         aux = aux + letter.key;
     }
     document.getElementById('letra').innerHTML = aux;
-    if (aux.includes("esketit")){
+    if (aux == "esketit"){
         window.open("https://www.youtube.com/watch?v=iSIcWKEVQIw&t=0s");
     }
 
